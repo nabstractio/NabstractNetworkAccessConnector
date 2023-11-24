@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$ref": "#/definitions/CreateSimSwapDate",
+  "definitions": {"CreateSimSwapDate": {
+    "additionalProperties": true,
+    "title": "CreateSimSwapDate",
+    "type": "object",
+    "properties": {"phoneNumber": {
+      "description": "Subscriber number in E.164 format (starting with country code). Optionally prefixed with '+'.",
+      "type": "string",
+      "example": "+346661113334"
+    }}
+  }}
+}

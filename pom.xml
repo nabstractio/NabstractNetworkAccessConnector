@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--suppress HtmlUnknownTag -->
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <name>Nabstract Service Api Connector</name>
+    <description>The Nabstract Services provide various services to the Application developers and Users to interact with the connectivity networks like 5G systems, enabling them to monitor and manage the connectivity from the Application level. A service can be, for example, as simple as checking if a device is in a specific area of interest for the application logic. Or it can be requesting a specific Quality of Service for the application traffic from a device to the application server. These APIs are designed to be simple intent-based calls which do not need any network level knowledge. The suite of APIs includes many global open APIs defined by forums like Camara. Then there are others are industry focussed and applicable to individual vertical industry. The Applications can invoke these APIs from their components or code after acquiring the required authentication and authorisation credentials from the Operator.</description>
+    <parent>
+        <groupId>com.mulesoft.connectivity</groupId>
+        <artifactId>rest-sdk-connector-parent-pom</artifactId>
+        <version>0.8.0-RC3</version>
+    </parent>
+
+    <groupId>com.mulesoft.connectors</groupId>
+    <artifactId>nabstract-service-api-connector</artifactId>
+    <version>1.0.0</version>
+    <packaging>mule-extension</packaging>
+
+    <properties>
+        <rest.sdk.commons.version>${project.parent.version}</rest.sdk.commons.version>
+        <rest.sdk.mojo.version>${project.parent.version}</rest.sdk.mojo.version>
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.mule.runtime.plugins</groupId>
+                <artifactId>mule-extensions-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>com.mulesoft.munit</groupId>
+                <artifactId>munit-extensions-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

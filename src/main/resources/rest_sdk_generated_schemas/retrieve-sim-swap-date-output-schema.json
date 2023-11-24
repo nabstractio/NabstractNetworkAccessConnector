@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$ref": "#/definitions/SimSwapInfo",
+  "definitions": {"SimSwapInfo": {
+    "additionalProperties": true,
+    "title": "SimSwapInfo",
+    "type": "object",
+    "properties": {"latestSimChange": {
+      "format": "date-time",
+      "description": "Timestamp of latest SIM swap performed",
+      "type": "string"
+    }}
+  }}
+}

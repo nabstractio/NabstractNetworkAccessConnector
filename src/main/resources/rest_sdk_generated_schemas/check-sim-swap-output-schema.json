@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$ref": "#/definitions/CheckSimSwapInfo",
+  "definitions": {"CheckSimSwapInfo": {
+    "additionalProperties": true,
+    "title": "CheckSimSwapInfo",
+    "type": "object",
+    "properties": {"swapped": {
+      "description": "Indicates whether the SIM card has been swapped during the period within the provided age.",
+      "type": "boolean",
+      "example": false
+    }}
+  }}
+}

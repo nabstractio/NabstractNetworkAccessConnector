@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$ref": "#/definitions/CreateCheckSimSwap",
+  "definitions": {"CreateCheckSimSwap": {
+    "additionalProperties": true,
+    "title": "CreateCheckSimSwap",
+    "type": "object",
+    "properties": {
+      "phoneNumber": {
+        "description": "Subscriber number in E.164 format (starting with country code). Optionally prefixed with '+'.",
+        "type": "string",
+        "example": "+346661113334"
+      },
+      "maxAge": {
+        "description": "Period in hours to be checked for SIM swap. ",
+        "maximum": 2147483647,
+        "type": "integer",
+        "minimum": -2147483648,
+        "example": 240
+      }
+    }
+  }}
+}

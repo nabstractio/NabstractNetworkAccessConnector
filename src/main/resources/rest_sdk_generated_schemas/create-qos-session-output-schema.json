@@ -1,0 +1,195 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$ref": "#/definitions/SessionInfo0",
+  "definitions": {
+    "Message1": {
+      "additionalProperties": true,
+      "title": "Message1",
+      "type": "object",
+      "required": [
+        "description",
+        "severity"
+      ],
+      "properties": {
+        "severity": {
+          "description": "Message severity",
+          "type": "string",
+          "enum": [
+            "INFO",
+            "WARNING"
+          ]
+        },
+        "description": {
+          "description": "Detailed message text",
+          "type": "string"
+        }
+      }
+    },
+    "Device": {
+      "additionalProperties": true,
+      "title": "Device",
+      "type": "object",
+      "properties": {
+        "phoneNumber": {
+          "description": "Subscriber number (MSISDN) in E.164 format, starting with country code and optionally prefixed with '+'.",
+          "type": "string",
+          "example": "123456789"
+        },
+        "ipv6Address": {"type": "string"},
+        "ipv4Address": {"$ref": "#/definitions/DeviceIpv4Addr0"},
+        "networkAccessIdentifier": {
+          "type": "string",
+          "example": "123456789@domain.com"
+        }
+      }
+    },
+    "SessionInfo0": {
+      "additionalProperties": true,
+      "title": "SessionInfo0",
+      "type": "object",
+      "required": [
+        "applicationServer",
+        "device",
+        "expiresAt",
+        "qosProfile",
+        "qosStatus",
+        "sessionId",
+        "startedAt"
+      ],
+      "properties": {
+        "notificationUrl": {
+          "description": "Allows asynchronous delivery of session related events",
+          "type": "string",
+          "example": "https://application-server.com"
+        },
+        "applicationServerPorts": {"$ref": "#/definitions/PortsSpec0"},
+        "startedAt": {
+          "description": "Timestamp of session start in seconds since unix epoch",
+          "maximum": 9.223372036854776E+18,
+          "type": "integer",
+          "minimum": -9.223372036854776E+18,
+          "example": 1639479600
+        },
+        "sessionId": {
+          "format": "uuid",
+          "description": "Session ID in UUID format",
+          "type": "string"
+        },
+        "expiresAt": {
+          "description": "Timestamp of session expiration if the session was not deleted, in seconds since unix epoch",
+          "maximum": 9.223372036854776E+18,
+          "type": "integer",
+          "minimum": -9.223372036854776E+18,
+          "example": 1639566000
+        },
+        "devicePorts": {"$ref": "#/definitions/PortsSpec0"},
+        "duration": {
+          "description": "Session duration in seconds. Maximal value of 24 hours is used if not set. After session has expired the client will receive QOS_STATUS_CHANGED event with   - qosStatus is 'UNAVAILABLE', and,   - statusInfo is 'DURATION_EXPIRED'.  See notification callback. ",
+          "maximum": 2147483647,
+          "type": "integer",
+          "minimum": -2147483648,
+          "example": 86400
+        },
+        "qosProfile": {
+          "description": "A unique name for identifying a specific QoS profile. This may follow different formats depending on the service providers implementation. Some options addresses:   - A UUID style string   - Support for predefined profiles QOS_S, QOS_M, QOS_L, and QOS_E   - A searchable descriptive name ",
+          "type": "string",
+          "example": "QCI_1_voice"
+        },
+        "qosStatus": {
+          "type": "string",
+          "enum": [
+            "AVAILABLE",
+            "REQUESTED",
+            "UNAVAILABLE"
+          ]
+        },
+        "applicationServer": {"$ref": "#/definitions/ApplicationServer"},
+        "notificationAuthToken": {
+          "description": "Authentication token for callback API",
+          "type": "string",
+          "example": "c8974e592c2fa383d4a3960714"
+        },
+        "messages": {
+          "type": "array",
+          "items": {"$ref": "#/definitions/Message1"}
+        },
+        "device": {"$ref": "#/definitions/Device"}
+      }
+    },
+    "PortsSpec0": {
+      "additionalProperties": true,
+      "title": "PortsSpec0",
+      "type": "object",
+      "properties": {
+        "ranges": {
+          "type": "array",
+          "items": {"$ref": "#/definitions/PortsSpecRanges1"}
+        },
+        "ports": {
+          "type": "array",
+          "items": {
+            "maximum": 2147483647,
+            "type": "integer",
+            "minimum": -2147483648
+          }
+        }
+      }
+    },
+    "ApplicationServer": {
+      "additionalProperties": true,
+      "title": "ApplicationServer",
+      "type": "object",
+      "properties": {
+        "ipv6Address": {"type": "string"},
+        "ipv4Address": {
+          "description": "IPv4 address may be specified in form <address/mask> as:   - address - an IPv4 number in dotted-quad form 1.2.3.4. Only this exact IP number will match the flow control rule.   - address/mask - an IP number as above with a mask width of the form 1.2.3.4/24.     In this case, all IP numbers from 1.2.3.0 to 1.2.3.255 will match. The bit width MUST be valid for the IP version. ",
+          "type": "string",
+          "example": "192.168.0.1/24"
+        }
+      }
+    },
+    "PortsSpecRanges1": {
+      "additionalProperties": true,
+      "title": "PortsSpecRanges1",
+      "type": "object",
+      "required": [
+        "from",
+        "to"
+      ],
+      "properties": {
+        "from": {
+          "maximum": 2147483647,
+          "type": "integer",
+          "minimum": -2147483648
+        },
+        "to": {
+          "maximum": 2147483647,
+          "type": "integer",
+          "minimum": -2147483648
+        }
+      }
+    },
+    "DeviceIpv4Addr0": {
+      "additionalProperties": true,
+      "title": "DeviceIpv4Addr0",
+      "type": "object",
+      "properties": {
+        "privateAddress": {
+          "description": "A single IPv4 address with no subnet mask",
+          "type": "string",
+          "example": "84.125.93.10"
+        },
+        "publicPort": {
+          "maximum": 2147483647,
+          "type": "integer",
+          "minimum": -2147483648
+        },
+        "publicAddress": {
+          "description": "A single IPv4 address with no subnet mask",
+          "type": "string",
+          "example": "84.125.93.10"
+        }
+      }
+    }
+  }
+}

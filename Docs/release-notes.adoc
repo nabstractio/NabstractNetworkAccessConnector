@@ -1,4 +1,4 @@
-# Nabstract Service API Connector Release Notes - Mule 4
+# Nabstract Network Access Connector Release Notes - Mule 4
 
 == 29th Nov, 2023
 

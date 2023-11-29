@@ -1,8 +1,8 @@
 = Nabstract Connector User Manual
 
-== Introduction --####Need to add
+== Introduction 
 
-
+The Nabstract Network Access Connectors provide various services to the Application developers and Users to interact with the connectivity networks like 5G systems, enabling them to monitor and manage the connectivity from the Application level. With these APIs, application developers can seamlessly access the Telco networks for fetching the information like status and location of devices, device connectivity details and quality of service of the traffic flows. They can also influence the policies in the network that can alter the behaviors of the connectivity to suit the application business logic.
 
 MuleSoft maintains this connector under the https://docs.mulesoft.com/mule-runtime/3.8/anypoint-connectors#connector-categories[MuleSoft Certified Category] support policy.
 

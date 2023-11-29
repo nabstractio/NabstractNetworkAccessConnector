@@ -1,2 +1,2 @@
 # ServiceApiConnector
-This repository used for creating service API connector
+This repository is used for creating service API connector (Nabstract Network Access Connector)

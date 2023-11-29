@@ -18,9 +18,9 @@ The Nabstract connector is compatible with:
 
 The Nabstract Network Access Connectors provide various services to the Application developers and Users to interact with the connectivity networks like 5G systems, enabling them to monitor and manage the connectivity from the Application level. With these APIs, application developers can seamlessly access the Telco networks for fetching the information like status and location of devices, device connectivity details and quality of service of the traffic flows. They can also influence the policies in the network that can alter the behaviors of the connectivity to suit the application's business logic.
 
-Supported API’S are:
-|Nabstract Quality on Demand API
-|Nabstract SIM Swap check API
+== Supported API’S are:
+Nabstract Quality on Demand API
+Nabstract SIM Swap check API
 
 
 ## Version 1.0.0 - Fixed in this Release

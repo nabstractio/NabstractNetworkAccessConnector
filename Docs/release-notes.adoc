@@ -1,0 +1,33 @@
+# Nabstract Service API Connector Release Notes - Mule 4
+
+== 29th Nov, 2023
+
+## Version 1.0.0 - Compatibility
+
+The Nabstract connector is compatible with:
+
+[%header%autowidth.spread]
+|===
+|Software |Version
+|Anypoint Studio |7.4.x
+|Mule |4.4.0 and later
+|JDK |1.8.x and later
+|===
+
+== Features
+
+The Nabstract Network Access Connectors provide various services to the Application developers and Users to interact with the connectivity networks like 5G systems, enabling them to monitor and manage the connectivity from the Application level. With these APIs, application developers can seamlessly access the Telco networks for fetching the information like status and location of devices, device connectivity details and quality of service of the traffic flows. They can also influence the policies in the network that can alter the behaviors of the connectivity to suit the application's business logic.
+
+== Supported API’S are:
+- Nabstract Quality on Demand API
+- Nabstract SIM Swap check API
+
+
+## Version 1.0.0 - Fixed in this Release
+N/A
+
+## Support Resources
+
+* Learn how to https://docs.mulesoft.com/mule-runtime/3.9/installing-connectors[Install Anypoint Connectors] using Anypoint Exchange.
+
+* Access the https://help.mulesoft.com/s/forum[MuleSoft Forum] to pose questions and get help from Mule’s broad community of users.

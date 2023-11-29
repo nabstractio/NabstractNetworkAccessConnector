@@ -1,4 +1,4 @@
-= Nabstract Connector User Manual
+= Nabstract Network Access Connectors User Manual
 
 == Introduction 
 

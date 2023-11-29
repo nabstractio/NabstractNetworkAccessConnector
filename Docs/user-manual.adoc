@@ -1,0 +1,135 @@
+= Nabstract Connector User Manual
+
+== Introduction 
+
+The Nabstract Network Access Connectors provide various services to the Application developers and Users to interact with the connectivity networks like 5G systems, enabling them to monitor and manage the connectivity from the Application level. With these APIs, application developers can seamlessly access the Telco networks for fetching the information like status and location of devices, device connectivity details and quality of service of the traffic flows. They can also influence the policies in the network that can alter the behaviors of the connectivity to suit the application business logic.
+
+MuleSoft maintains this connector under the https://docs.mulesoft.com/mule-runtime/3.8/anypoint-connectors#connector-categories[MuleSoft Certified Category] support policy.
+
+
+== Prerequisites  --### Need to add
+
+This document assumes that you are familiar with Mule 4, https://www.mulesoft.com/platform/cloud-connectors[Anypoint Connectors], and https://docs.mulesoft.com/studio/7.7/[Anypoint Studio]. To increase your familiarity with Studio, consider completing a https://docs.mulesoft.com/studio/7.7/[Anypoint Studio] Tutorial. This page requires some basic knowledge of https://docs.mulesoft.com/mule-runtime/latest/[Mule Concepts], https://docs.mulesoft.com/mule-runtime/latest/mule-components[Components in a Mule Flow], and https://docs.mulesoft.com/mule-runtime/3.8/global-elements[Global Elements].
+
+[[requirements]]
+== Hardware and Software Requirements
+For hardware and software requirements, please visit the Hardware and https://docs.mulesoft.com/mule-runtime/4.2/hardware-and-software-requirements[Software Requirements page].
+
+=== Mule Compatibility
+[%header%autowidth.spread]
+|===
+|Application/Service |Version
+|Mule Runtime |4.4.x and later
+|Anypoint Studio | 7.4.x and later
+
+|===
+
+== Installing the Connector
+
+* You can install the connector in Anypoint Studio using the instructions in https://docs.mulesoft.com/exchange/#installing-a-connector-from-anypoint-exchange[Installing a Connector from Anypoint Exchange.]
+
+
+== Maven Dependency Information
+After downloading and installing the connector, following steps make the Okta connector available inside a Mule application for use and to package the application with connector. If using Anypoint Studio, it will do this automatically. For Maven dependency management, include this XML snippet in pom.xml file in the Mule project.
+
+       <dependency>
+            <groupId>com.mulesoft.connectors</groupId>
+            <artifactId>nabstract-service-api-connector</artifactId>
+            <version>1.0.0</version>
+            <classifier>mule-plugin</classifier>
+        </dependency>
+
+
+== How to Configure
+
+* After adding connector dependency to Mule project, click on *Global Elements* tab at the base of the canvas.
+* In the Global Mule Configuration Elements screen, click *Create*.
+* In the Choose Global Type wizard, collapse connector configuration and select *'Nabstract'* and click OK.
+
+image::img/global_nabstract.png[]
+
+[%header%autowidth.spread]
+|===
+|Field Name |Type |Value
+|Base Uri |String |Enter a Windows domain for the user to log in with.
+|API Key |String |Enter the Api Key to log in with.
+|===
+
+image::img/global_Nabstract_config.png[]
+
+[[ns-schema]]
+== Connector Namespace and Schema
+
+When designing your application in Anypoint Studio, when you drag the connector from the palette onto the Anypoint Studio canvas, Studio automatically populates the XML code with the connector *namespace* and *schema location*.
+
+### Need to check lines number: 66 to 86 ###########################################################
+*Namespace:* `+http://www.mulesoft.org/schema/mule/connector+` +
+*Schema Location:* `+http://www.mulesoft.org/schema/mule/connector/current/mule-connector.xsd+`
+
+[TIP]
+If you are manually coding the Mule application in Studio's XML editor or another text editor, define the namespace and schema location in the header of your *Configuration XML*, inside the `<mule>` tag.
+
+
+----
+<mule xmlns:okta="http://www.mulesoft.org/schema/mule/okta"
+      xmlns="http://www.mulesoft.org/schema/mule/core"
+      xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core
+      http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+      http://www.mulesoft.org/schema/mule/okta
+      http://www.mulesoft.org/schema/mule/okta/current/mule-okta.xsd">
+
+      <!-- put your global configuration elements and flows here -->
+
+
+</mule>
+----
+
+== Use Case
+
+This use case explains simple CRUD operations of Nabstract Service API.
+
+[start = 1]
+. Create Authorization Server and Store User basic details in Database.
+. Fetch Authorization Server from Okta.
+. Update Authorization Server and update in Database.
+
+image::img/c-u-l-functional-usecase.jpg[]
+
+*HTTP Listener Endpoint* - listens for HTTP requests.
+
+*Set Variable*(vRequiredBody) - Set flow variable required body.
+
+*Create Authorization Server* - Creates a new Custom Authorization Server.
+
+*Set Variable*(vServerId) - Set flow variable server id.
+
+*Insert* - Insert created Authorize Server details.
+
+*Update Authorization Server* - Update Authorization Server.
+
+*List Authorization Server* - Retrieve all Authorization Servers.
+
+*Set Payload* - Set final payload.
+
+
+
+[start = 4]
+. Deactivate Authorization Server.
+
+image::img/deactivate-auth-servar-functional-usecase.jpg[]
+
+*HTTP Listener Endpoint* - listens for HTTP requests.
+
+*Set Variable* - Set flow variable server id.
+
+*Activate or Deactivate Authorization Server* - Deactivate Authorization Server.
+
+*Update* - Update Authorization Server status.
+
+*Set Payload* - Set final payload.
+
+== Resources
+
+Access the https://github.com/EDS-github/mule4-okta-connector-documentation/blob/master/docs/release-notes.adoc[Okta Connector Release Notes]

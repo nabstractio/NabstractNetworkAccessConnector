@@ -1,0 +1,32 @@
+# Nabstract Service API Connector Release Notes - Mule 4
+
+== 29th Nov, 2023
+
+## Version 1.0.0 - Compatibility
+
+The Nabstract connector is compatible with:
+
+[%header%autowidth.spread]
+|===
+|Software |Version
+|Anypoint Studio |7.4.x
+|Mule |4.3.0 and later
+|JDK |1.8.x and later
+|===
+
+== Features
+
+The Nabstract Connector provides connectivity to the Nabstract Rest API. This connector functions within a Mule application as a secure opening through which you can access. Supported API'S are:
+
+* QoD
+* SIM SWAP
+
+
+## Version 1.0.0 - Fixed in this Release
+N/A
+
+## Support Resources
+
+* Learn how to https://docs.mulesoft.com/mule-runtime/3.9/installing-connectors[Install Anypoint Connectors] using Anypoint Exchange.
+
+* Access the https://help.mulesoft.com/s/forum[MuleSoft Forum] to pose questions and get help from Mule’s broad community of users.

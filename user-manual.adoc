@@ -34,7 +34,7 @@ After downloading and installing the connector, following steps make the Okta co
 
        <dependency>
             <groupId>com.mulesoft.connectors</groupId>
-            <artifactId>mule-okta-connector</artifactId>
+            <artifactId>nabstract-service-api-connector</artifactId>
             <version>1.0.0</version>
             <classifier>mule-plugin</classifier>
         </dependency>
@@ -44,9 +44,9 @@ After downloading and installing the connector, following steps make the Okta co
 
 * After adding connector dependency to Mule project, click on *Global Elements* tab at the base of the canvas.
 * In the Global Mule Configuration Elements screen, click *Create*.
-* In the Choose Global Type wizard, collapse connector configuration and select *'Okta Config'* and click OK.
+* In the Choose Global Type wizard, collapse connector configuration and select *'Nabstract'* and click OK.
 
-image::img/global_okta.png[]
+image::img/global_nabstract.png[]
 
 [%header%autowidth.spread]
 |===
@@ -55,13 +55,14 @@ image::img/global_okta.png[]
 |API Key |String |Enter the Api Key to log in with.
 |===
 
-image::img/global_okta_config.png[]
+image::img/global_Nabstract_config.png[]
 
 [[ns-schema]]
 == Connector Namespace and Schema
 
 When designing your application in Anypoint Studio, when you drag the connector from the palette onto the Anypoint Studio canvas, Studio automatically populates the XML code with the connector *namespace* and *schema location*.
 
+### Need to check lines number: 66 to 86 ###########################################################
 *Namespace:* `+http://www.mulesoft.org/schema/mule/connector+` +
 *Schema Location:* `+http://www.mulesoft.org/schema/mule/connector/current/mule-connector.xsd+`
 
@@ -87,7 +88,7 @@ If you are manually coding the Mule application in Studio's XML editor or anothe
 
 == Use Case
 
-This use case explains simple CRUD operations of Okta Authorization Server.
+This use case explains simple CRUD operations of Nabstract Service API.
 
 [start = 1]
 . Create Authorization Server and Store User basic details in Database.

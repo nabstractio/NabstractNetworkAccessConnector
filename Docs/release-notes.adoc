@@ -4,7 +4,7 @@
 
 ## Version 1.0.0 - Compatibility
 
-The Nabstract connector is compatible with:
+The Nabstract Network Access Connector is compatible with:
 
 [%header%autowidth.spread]
 |===

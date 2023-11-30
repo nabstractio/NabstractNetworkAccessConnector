@@ -5,7 +5,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <name>Nabstract Service Api Connector</name>
+    <name>Nabstract Network Access Connector</name>
     <description>The Nabstract Services provide various services to the Application developers and Users to interact with the connectivity networks like 5G systems, enabling them to monitor and manage the connectivity from the Application level. A service can be, for example, as simple as checking if a device is in a specific area of interest for the application logic. Or it can be requesting a specific Quality of Service for the application traffic from a device to the application server. These APIs are designed to be simple intent-based calls which do not need any network level knowledge. The suite of APIs includes many global open APIs defined by forums like Camara. Then there are others are industry focussed and applicable to individual vertical industry. The Applications can invoke these APIs from their components or code after acquiring the required authentication and authorisation credentials from the Operator.</description>
     <parent>
         <groupId>com.mulesoft.connectivity</groupId>
@@ -14,8 +14,8 @@
     </parent>
 
     <groupId>com.mulesoft.connectors</groupId>
-    <artifactId>nabstract-service-api-connector</artifactId>
-    <version>1.0.0</version>
+    <artifactId>nabstract-network-access-connector</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
     <packaging>mule-extension</packaging>
 
     <properties>

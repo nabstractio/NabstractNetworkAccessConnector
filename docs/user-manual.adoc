@@ -88,6 +88,7 @@ If you are manually coding the Mule application in Studio's XML editor or anothe
 
 ==== *QoD session* 
 Create a QoS session with the required quality attributes for selected traffic flows from the devices to the Application server. The session can also be modified or deleted.
+
 image::image/qod_create.png[]
 
 * *HTTP Listener Endpoint*- listens for HTTP requests.

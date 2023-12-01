@@ -93,10 +93,10 @@ image::image/qod_create.png[]
 
 * *HTTP Listener Endpoint*- listens for HTTP requests.
 * *Logger*: Logging the start trace of the flow.
-* *QoD_Create: Create a QoD session
+* *QoD_Create*: Create a QoD session
 
 
-
+image::image/qod_create.png[]
 
 
 

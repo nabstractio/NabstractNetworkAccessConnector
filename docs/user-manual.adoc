@@ -52,7 +52,10 @@ image::img/global_nabstract.png[]
 |===
 |Field Name |Type |Value
 |Base Uri |String |Enter a Windows domain for the user to log in with.
-|API Key |String |Enter the Api Key to log in with.
+|Client id |String |Enter the client ID  for generate the token
+|Client secret |String |Enter the client secret  for generate the token
+|Token url |String |Enter the token URL
+|Scopes |String | Enter the scopes
 |===
 
 image::img/global_Nabstract_config.png[]

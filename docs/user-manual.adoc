@@ -98,7 +98,7 @@ image::image/qod_create.png[]
 ==== *Check SIM Swap* 
 Fetch information whether the device SIM has been swapped in the time period specified. The service can also provide the date of last swapping of SIM.
 
-image::image/check_sim_swap.png
+image::image/check_sim_swap.png[]
 
 
 * *HTTP Listener Endpoint*- listens for HTTP requests.
@@ -108,7 +108,7 @@ image::image/check_sim_swap.png
 ==== *Retrieve Sim Swap Date* 
 The service can  provide the date of last swapping of SIM.
 
-image::image/retrieve_sim_swap_date.png
+image::image/retrieve_sim_swap_date.png[]
 
 * *HTTP Listener Endpoint*- listens for HTTP requests.
 * *Logger*: Logging the start trace of the flow.

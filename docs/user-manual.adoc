@@ -89,15 +89,30 @@ If you are manually coding the Mule application in Studio's XML editor or anothe
 ==== *QoD session* 
 Create a QoS session with the required quality attributes for selected traffic flows from the devices to the Application server. The session can also be modified or deleted.
 
-image::https://github.com/nabstractio/NabstractNetworkAccessConnector/blob/main/docs/image/qod_create.png[]
+image::image/qod_create.png[]
 
 * *HTTP Listener Endpoint*- listens for HTTP requests.
 * *Logger*: Logging the start trace of the flow.
 * *QoD_Create*: Create a QoD session
 
+==== *Check SIM Swap* 
+Fetch information whether the device SIM has been swapped in the time period specified. The service can also provide the date of last swapping of SIM.
 
-image::image/qod_create.png[]
+image::image/check_sim_swap.png
 
+
+* *HTTP Listener Endpoint*- listens for HTTP requests.
+* *Logger*: Logging the start trace of the flow.
+* *Check Sim Swap*: Check device SIM has been swapped in the period
+
+==== *Retrieve Sim Swap Date* 
+The service can  provide the date of last swapping of SIM.
+
+image::image/retrieve_sim_swap_date.png
+
+* *HTTP Listener Endpoint*- listens for HTTP requests.
+* *Logger*: Logging the start trace of the flow.
+* *Retrieve Sim Swap Date*:  The service can  provide the date of last swapping of SIM.
 
 
 == Resources

@@ -46,8 +46,6 @@ After downloading and installing the connector, following steps make the Nabstra
 * In the Global Mule Configuration Elements screen, click *Create*.
 * In the Choose Global Type wizard, collapse connector configuration and select *'Nabstract Network Access Connector'* and click OK.
 
-image::img/global_nabstract.png[]
-
 [%header%autowidth.spread]
 |===
 |Field Name |Type |Value
@@ -57,8 +55,6 @@ image::img/global_nabstract.png[]
 |Token url |String |Enter the token URL
 |Scopes |String | Enter the scopes
 |===
-
-image::img/global_Nabstract_config.png[]
 
 [[ns-schema]]
 == Connector Namespace and Schema
@@ -93,7 +89,7 @@ If you are manually coding the Mule application in Studio's XML editor or anothe
 ==== *QoD session* 
 Create a QoS session with the required quality attributes for selected traffic flows from the devices to the Application server. The session can also be modified or deleted.
 
-image::/docs/image/qod_create.png[]
+image::image/qod_create.png[]
 
 * *HTTP Listener Endpoint*- listens for HTTP requests.
 * *Logger*: Logging the start trace of the flow.

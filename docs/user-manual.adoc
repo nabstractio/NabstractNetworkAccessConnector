@@ -134,4 +134,4 @@ image::img/deactivate-auth-servar-functional-usecase.jpg[]
 
 == Resources
 
-Access the https://github.com/EDS-github/mule4-okta-connector-documentation/blob/master/docs/release-notes.adoc[Okta Connector Release Notes]
+Access the https://github.com/nabstractio/NabstractNetworkAccessConnector/blob/main/docs/release-notes.adoc (Nabstract Network Access Connectors Release Notes]

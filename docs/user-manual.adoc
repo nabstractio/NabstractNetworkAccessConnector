@@ -90,48 +90,14 @@ If you are manually coding the Mule application in Studio's XML editor or anothe
 
 == Use Case
 
-This use case explains simple CRUD operations of Nabstract Service API.
+==== *QoD session* 
+Create a QoS session with the required quality attributes for selected traffic flows from the devices to the Application server. The session can also be modified or deleted.
 
-[start = 1]
-. Create Authorization Server and Store User basic details in Database.
-. Fetch Authorization Server from Okta.
-. Update Authorization Server and update in Database.
-
-image::img/c-u-l-functional-usecase.jpg[]
-
-*HTTP Listener Endpoint* - listens for HTTP requests.
-
-*Set Variable*(vRequiredBody) - Set flow variable required body.
-
-*Create Authorization Server* - Creates a new Custom Authorization Server.
-
-*Set Variable*(vServerId) - Set flow variable server id.
-
-*Insert* - Insert created Authorize Server details.
-
-*Update Authorization Server* - Update Authorization Server.
-
-*List Authorization Server* - Retrieve all Authorization Servers.
-
-*Set Payload* - Set final payload.
+image::docs/image/qod_create.png[]
 
 
 
-[start = 4]
-. Deactivate Authorization Server.
-
-image::img/deactivate-auth-servar-functional-usecase.jpg[]
-
-*HTTP Listener Endpoint* - listens for HTTP requests.
-
-*Set Variable* - Set flow variable server id.
-
-*Activate or Deactivate Authorization Server* - Deactivate Authorization Server.
-
-*Update* - Update Authorization Server status.
-
-*Set Payload* - Set final payload.
 
 == Resources
 
-Access the https://github.com/nabstractio/NabstractNetworkAccessConnector/blob/main/docs/release-notes.adoc [Nabstract Network Access Connectors Release Notes]
+Access the https://github.com/nabstractio/NabstractNetworkAccessConnector/blob/main/docs/release-notes.adoc[Nabstract Network Access Connectors Release Notes]

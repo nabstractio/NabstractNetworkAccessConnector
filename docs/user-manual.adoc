@@ -95,6 +95,8 @@ Create a QoS session with the required quality attributes for selected traffic f
 
 image::docs/image/qod_create.png[]
 
+![Book logo](docs/image/qod_create.png)
+
 {blank}
 
 

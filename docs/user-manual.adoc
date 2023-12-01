@@ -65,7 +65,6 @@ image::img/global_Nabstract_config.png[]
 
 When designing your application in Anypoint Studio, when you drag the connector from the palette onto the Anypoint Studio canvas, Studio automatically populates the XML code with the connector *namespace* and *schema location*.
 
-### Need to check lines number: 66 to 86 ###########################################################
 *Namespace:* `+http://www.mulesoft.org/schema/mule/connector+` +
 *Schema Location:* `+http://www.mulesoft.org/schema/mule/connector/current/mule-connector.xsd+`
 
@@ -74,14 +73,14 @@ If you are manually coding the Mule application in Studio's XML editor or anothe
 
 
 ----
-<mule xmlns:okta="http://www.mulesoft.org/schema/mule/okta"
+<mule xmlns:nabstract-network-access-connector="http://www.mulesoft.org/schema/mule/nabstract-network-access-connector"
       xmlns="http://www.mulesoft.org/schema/mule/core"
       xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core
       http://www.mulesoft.org/schema/mule/core/current/mule.xsd
-      http://www.mulesoft.org/schema/mule/okta
-      http://www.mulesoft.org/schema/mule/okta/current/mule-okta.xsd">
+      http://www.mulesoft.org/schema/mule/nabstract-network-access-connector
+      http://www.mulesoft.org/schema/mule/nabstract-network-access-connector/current/mule-nabstract-network-access-connector.xsd">
 
       <!-- put your global configuration elements and flows here -->
 

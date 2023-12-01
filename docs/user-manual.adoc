@@ -9,7 +9,7 @@ MuleSoft maintains this connector under the https://docs.mulesoft.com/mule-runti
 
 == Prerequisites  
 
-This document assumes that you are familiar with Mule 4, https://www.mulesoft.com/platform/cloud-connectors[Anypoint Connectors], and https://docs.mulesoft.com/studio/7.7/[Anypoint Studio]. To increase your familiarity with Studio, consider completing a https://docs.mulesoft.com/studio/latest/[Anypoint Studio] Tutorial. This page requires some basic knowledge of https://docs.mulesoft.com/mule-runtime/latest/[Mule Concepts], https://docs.mulesoft.com/mule-runtime/latest/mule-components[Components in a Mule Flow], and https://docs.mulesoft.com/mule-runtime/3.8/global-elements[Global Elements].
+This document assumes that you are familiar with Mule 4, https://www.mulesoft.com/platform/cloud-connectors[Anypoint Connectors], and https://docs.mulesoft.com/studio/latest/[Anypoint Studio]. To increase your familiarity with Studio, consider completing a https://docs.mulesoft.com/studio/latest/[Anypoint Studio] Tutorial. This page requires some basic knowledge of https://docs.mulesoft.com/mule-runtime/latest/[Mule Concepts], https://docs.mulesoft.com/mule-runtime/latest/mule-components[Components in a Mule Flow], and https://docs.mulesoft.com/mule-runtime/3.8/global-elements[Global Elements].
 
 [[requirements]]
 == Hardware and Software Requirements

@@ -95,9 +95,12 @@ Create a QoS session with the required quality attributes for selected traffic f
 
 image::/docs/image/qod_create.png[]
 
+* *HTTP Listener Endpoint*- listens for HTTP requests.
+* *Logger*: Logging the start trace of the flow.
+* *QoD_Create: Create a QoD session
 
 
-{blank}
+
 
 
 

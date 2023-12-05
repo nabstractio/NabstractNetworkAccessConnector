@@ -3,13 +3,15 @@
 apiSpec:
   url: 'D:\MuleSoft\Connector\NIOP_Swagger.yaml'
 
-connectorName: Nabstract Network Access Connector
-connectorDescription: 'The Nabstract Services provide various services to the Application developers and Users to interact with the connectivity networks like 5G systems, enabling them to monitor and manage the connectivity from the Application level. A service can be, for example, as simple as checking if a device is in a specific area of interest for the application logic. Or it can be requesting a specific Quality of Service for the application traffic from a device to the application server. These APIs are designed to be simple intent-based calls which do not need any network level knowledge. The suite of APIs includes many global open APIs defined by forums like Camara. Then there are others are industry focussed and applicable to individual vertical industry. The Applications can invoke these APIs from their components or code after acquiring the required authentication and authorisation credentials from the Operator.'
+connectorName: Nabstract Network Access Connector - Mule 4
+connectorDescription: 'The Nabstract Services provide various services to the Application developers and Users to interact with the connectivity networks like 5G systems, enabling them to monitor and manage the connectivity from the Application level.'
+
+connectorCategory: certified
 
 connectorGav:
   groupId: com.mulesoft.connectors
-  artifactId: nabstract-network-access-connector
-  version: 1.0.0-SNAPSHOT
+  artifactId: mule4-nabstract-network-access-connector
+  version: 1.0.0
 
 baseUri:
   type: parameter

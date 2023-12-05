@@ -1,0 +1,24 @@
+package com.mulesoft.connectors.nabstractnetworkaccessconnectormule4.internal.config;
+
+import com.mulesoft.connectors.nabstractnetworkaccessconnectormule4.internal.config.refinement.NabstractNetworkAccessConnectorMule4ConfigurationRefinement;
+import com.mulesoft.connectors.nabstractnetworkaccessconnectormule4.internal.connection.provider.Oauth2ConnectionProvider;
+import com.mulesoft.connectors.nabstractnetworkaccessconnectormule4.internal.operation.CheckSimSwapOperation;
+import com.mulesoft.connectors.nabstractnetworkaccessconnectormule4.internal.operation.CreateQosSessionOperation;
+import com.mulesoft.connectors.nabstractnetworkaccessconnectormule4.internal.operation.DeleteQosSessionOperation;
+import com.mulesoft.connectors.nabstractnetworkaccessconnectormule4.internal.operation.GetQosSessionDetailsOperation;
+import com.mulesoft.connectors.nabstractnetworkaccessconnectormule4.internal.operation.RetrieveSimSwapDateOperation;
+import org.mule.runtime.extension.api.annotation.Configuration;
+import org.mule.runtime.extension.api.annotation.Operations;
+import org.mule.runtime.extension.api.annotation.connectivity.ConnectionProviders;
+
+@Configuration
+@Operations({
+  CheckSimSwapOperation.class,
+  RetrieveSimSwapDateOperation.class,
+  CreateQosSessionOperation.class,
+  GetQosSessionDetailsOperation.class,
+  DeleteQosSessionOperation.class
+})
+@ConnectionProviders({Oauth2ConnectionProvider.class})
+public class NabstractNetworkAccessConnectorMule4Configuration
+    extends NabstractNetworkAccessConnectorMule4ConfigurationRefinement {}

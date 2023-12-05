@@ -10,7 +10,7 @@ The Nabstract Network Access Connector is compatible with:
 |===
 |Software |Version
 |Anypoint Studio |7.4.x
-|Mule |4.4.0 and later
+|Mule |4.3.0 and later
 |JDK |1.8.x and later
 |===
 

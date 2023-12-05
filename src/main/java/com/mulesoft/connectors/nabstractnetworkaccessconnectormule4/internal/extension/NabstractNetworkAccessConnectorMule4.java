@@ -9,7 +9,7 @@ import org.mule.runtime.extension.api.annotation.dsl.xml.Xml;
 import org.mule.runtime.extension.api.annotation.error.ErrorTypes;
 import org.mule.runtime.extension.api.annotation.license.RequiresEnterpriseLicense;
 
-@Extension(name = "Nabstract Network Access Connector Mule4", category = Category.CERTIFIED)
+@Extension(name = "Nabstract Network Access", category = Category.CERTIFIED)
 @Xml(prefix = "nabstract-network-access-connector-mule-4")
 @Configurations({NabstractNetworkAccessConnectorMule4Configuration.class})
 @ErrorTypes(RestError.class)

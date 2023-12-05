@@ -1,6 +1,6 @@
 # Nabstract Network Access Connector Release Notes - Mule 4
 
-== 29th Nov, 2023
+== 5th Dec, 2023
 
 ## Version 1.0.0 - Compatibility
 
@@ -10,7 +10,7 @@ The Nabstract Network Access Connector is compatible with:
 |===
 |Software |Version
 |Anypoint Studio |7.4.x
-|Mule |4.4.0 and later
+|Mule |4.3.0 and later
 |JDK |1.8.x and later
 |===
 
